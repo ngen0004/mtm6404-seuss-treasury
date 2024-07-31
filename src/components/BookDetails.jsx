@@ -6,10 +6,9 @@ function BookDetails() {
     const [book, setBook] = useState(null);
     
     useEffect(() => {
-        fetch('https://seussology.info/api/books/1')
+        fetch('https://seussology.info/api/books/' + id)
         .then(response => response.json())
         .then(data => setBook(data))
-        .catch(error => console.error('Error fetching book details:', error));
   }, [id]);
 
     if (!book) {
@@ -17,8 +16,8 @@ function BookDetails() {
     }
 
     return (
-        <div>
-            <h1>{book.title}</h1>
+        <div className="det">
+            <h3>{book.title}</h3>
             <img src={book.image} key={book.image} alt={book.title} />
             <p>{book.description}</p>
         </div>

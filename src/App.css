@@ -21,34 +21,18 @@ h3, nav {
   display: inline-block;
 }
 
-nav {
+nav{
   margin-left: 1em;
 }
 
-.books {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 20px;
+nav link{
+  padding-left: 20px;
 }
 
-.book {
-  margin: 10px;
-  flex: 1;
-  min-width: 200px;
-  max-width: 250px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s;
-}
-
-.book:hover {
-  transform: translateY(-5px);
-}
-
-.book img {
-  width: 100%;
-  display: flex;
-  border-bottom: 1px solid #ddd;
+.book img{
+  width: 200px;
+  height: 200px;
+  padding-left: 13px;
 }
 
 @keyframes logo-spin {
@@ -67,6 +51,7 @@ nav {
   .nav{
     display: flex;
   }
+  
 
   
 

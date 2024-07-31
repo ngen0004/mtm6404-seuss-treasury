@@ -12,8 +12,7 @@ function Books(props) {
   }, []);
 
     return (
-        <div>
-            <h1>Books</h1>
+        <div className="book">
             {books.map((book) => (
                 <Link to={`/books/${book.id}`} key={book.id}>
                     <img src={book.image} key={book.image} alt={book.title} />

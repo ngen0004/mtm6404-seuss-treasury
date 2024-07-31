@@ -6,7 +6,7 @@ function Navigation() {
         <div className="nav">
             <b>Seuss Treasury</b>
             <nav>
-                <Link to="/books">Books  </Link>          
+                <Link to="/books">Books</Link>          
                 <Link to="/quotes">Quotes</Link>                
             </nav>
         </div>
