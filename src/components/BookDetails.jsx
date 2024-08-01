@@ -16,10 +16,13 @@ function BookDetails() {
     }
 
     return (
-        <div className="det">
-            <h3>{book.title}</h3>
+        <div className="det">            
             <img src={book.image} key={book.image} alt={book.title} />
-            <p>{book.description}</p>
+            <div>
+                <h3>{book.title}</h3>
+                <p>{book.description}</p>
+            </div>
+            
         </div>
     );
 }

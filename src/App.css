@@ -25,14 +25,35 @@ nav{
   margin-left: 1em;
 }
 
-nav link{
-  padding-left: 20px;
+.nav-link{
+  padding-right: 10px;
 }
 
 .book img{
   width: 200px;
   height: 200px;
   padding-left: 13px;
+}
+
+.det{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.det img{
+  padding-left: 13px;
+}
+
+.quotes{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+.quotes p{
+  border: 1px solid #ccc;
 }
 
 @keyframes logo-spin {
@@ -51,6 +72,7 @@ nav link{
   .nav{
     display: flex;
   }
+
   
 
   
